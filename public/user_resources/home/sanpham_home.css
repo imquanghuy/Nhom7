@@ -1,0 +1,55 @@
+.danhmuc:hover{
+    transform: translateY(-5px);
+}
+.sanpham_new{
+    position: relative;
+}
+.sanpham_new_hover{
+    /*display: none;*/
+    position: absolute;
+    top : 0;
+    left: -417px;
+    height: 80%;
+    background-color: rgba(114,124,245,0.3);
+    transition: all 1s;
+}
+.sanpham_new_hover .alert{
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sanpham_new:hover .sanpham_new_hover {
+    left: 0;
+}
+.sanpham_like:hover{
+    transform: scale(1.06);
+    transition: .5s ease-in-out;
+}
+.sanpham_discount{
+    position: relative;
+}
+.sanpham_discount_hover {
+    position: absolute;
+    top: 0;
+    right: -416px;
+    height: 80%;
+    z-index: 1;
+    background-color: rgba(250,92,124,0.3);
+    transition: all 1s;
+}
+.cauhinh ul {
+    color: #ffffff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 18px;
+    text-shadow: 2px 2px 8px black;
+    text-align: center;
+}
+.cauhinh li {
+    height: 40px;
+}
+.sanpham_discount:hover .sanpham_discount_hover{
+    right: 0;
+}
